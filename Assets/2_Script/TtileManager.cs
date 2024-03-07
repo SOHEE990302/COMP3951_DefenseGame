@@ -5,6 +5,12 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement; // 씬 관리 클래스및 자료형 함수를 접근 가능
 // Ui객체를 받아들여서 버튼이 눌리면 명령을 처리하겠다
 // 버튼을 누르면 씬을 넘기겠다
+class MainData
+{
+    static public int curstage = 1; //current stage
+}
+
+
 public class TtileManager : MonoBehaviour
 {
     //Exit 버튼을 눌렀을때 게임 종료
@@ -27,6 +33,6 @@ public class TtileManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        print("Current Stage"+ MainData.curstage);
     }
 }

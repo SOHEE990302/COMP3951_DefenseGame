@@ -9,7 +9,7 @@ public class MarketManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        print("Current Stage" + MainData.curstage);
     }
 
     // Update is called once per frame
@@ -21,8 +21,10 @@ public class MarketManager : MonoBehaviour
     {
         
     }
-    public void GoNextStage()
+    public void GoNextStage() //move to next stage
     {
-        SceneManager.LoadScene("2_Game_Sense");
+        MainData.curstage += 1;
+
+        SceneManager.LoadScene("2_Game_Scene");
     }
 }

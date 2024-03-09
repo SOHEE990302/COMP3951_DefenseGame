@@ -9,7 +9,7 @@ Zombie Outbreak: Survival is a Unity-based game where players must defend agains
 ## Team Members
 
 - Sohee Hwang
-- Heeho Ryu
+- Heeho Ryou
 
 ## Cloning the Repository
 

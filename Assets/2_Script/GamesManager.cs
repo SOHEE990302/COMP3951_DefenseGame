@@ -10,7 +10,8 @@ public class GamesManager : MonoBehaviour
 
     public Text txt_StageNum;
 
-    public void NextScene()
+
+    public void NextScene()//move to the next scene when this is called
     {
         SceneManager.LoadScene("4_Market_Scene");
     }

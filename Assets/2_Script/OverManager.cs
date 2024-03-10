@@ -19,10 +19,10 @@ public class OverManager : MonoBehaviour
     }
     public void Btn_Continue()
     {
-        SceneManager.LoadScene("2_Game_Sense");
+        SceneManager.LoadScene("2_Game_Scene");
     }
     public void Btn_GoTilte()
     {
-        SceneManager.LoadScene("1_Ttile_Sense");
+        SceneManager.LoadScene("1_Ttile_Scene");
     }
 }

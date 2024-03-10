@@ -15,7 +15,7 @@ public class MarketManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        print("Current Stage: " + MainData.cur_Stage);
     }
     public void NextSence()
     {
@@ -23,6 +23,7 @@ public class MarketManager : MonoBehaviour
     }
     public void GoNextStage()
     {
-        SceneManager.LoadScene("2_Game_Sense");
+        MainData.cur_Stage += 1;
+        SceneManager.LoadScene("2_Game_Scene");
     }
 }

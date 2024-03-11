@@ -24,29 +24,13 @@ public class NewBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(0)==true) //0 <- left / 1,2 <- middle, right
+        if(Input.GetMouseButtonDown(0)==true) //0 <- left / 1,2 <- 중간, 우측
         {
             Input_state = 1;
-            // Recognize 3D objects when pressed
-            //How do you perceive -> ray tracing
-            Ray screenray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit other;
-            if (Physics.Raycast(screenray, out other, 20f) == true)
-            {
-                //You need to check what is the correct object
-                print("There's a guy who got hit" + other.transform.name);
-                if (other.transform.tag == "Enemy")
-                {
-                    Destroy(other.transform.gameObject);
-                }
-            }
-            else
-            {
-                print("No one has been hit");
-
-            }
+            //버튼을 눌렀을때 3D 객체를 인식
+            //어떻게 인식하냐 -> 광선 추적
         }
-        if (Input.GetMouseButtonUp(0)==true)
+        if(Input.GetMouseButtonUp(0)==true)
         {
             Input_state = 2;
         }

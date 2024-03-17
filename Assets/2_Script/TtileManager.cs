@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement; // 씬 관리 클래스및 자료형 함수�
 // Ui객체를 받아들여서 버튼이 눌리면 명령을 처리하겠다
 // 버튼을 누르면 씬을 넘기겠다
 
-class MainData
+public static class MainData
 {
     static public int cur_Stage = 1;
 }
